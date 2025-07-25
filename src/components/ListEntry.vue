@@ -1,11 +1,18 @@
 <template>
-        <router-link :to="dest" class="link-box">
+        <router-link v-if="dest" :to="dest" class="link-box">
         <img class = "icon" :src="imgSrc" alt="Bild" />
             <div class = "textbox">
                 <div class="boxHeader"> {{ boxText }} </div>
                 <div class="boxDescription"> {{ description }}</div>
             </div>
         </router-link>
+        <div v-else class="link-box">
+            <img class = "icon" :src="imgSrc" alt="Bild" />
+            <div class = "textbox">
+                <div class="boxHeader"> {{ boxText }} </div>
+                <div class="boxDescription"> {{ description }}</div>
+            </div>
+        </div>
 </template>
 
 <script>
@@ -25,24 +32,13 @@
             },
             dest: {
                 type: String,
-                required: true
+                required: false
             }
         }
     }
 </script>
 
 <style scoped>
-
-    .box {
-        border-style: solid;
-        border-radius: 20px;
-        border-color: rgb(75, 62, 83);
-        border-width: 5px;
-        width: 70%;
-        margin-top: 1em;
-        display: flex;
-        flex-direction: row;
-    }
 
     .textbox {
         display: flex;
@@ -73,7 +69,7 @@
         border-radius: 20px;
         border-color: rgb(75, 62, 83);
         border-width: 5px;
-        width: 70%;
+        width: 100%;
         margin-top: 1em;
         display: flex;
         flex-direction: row;

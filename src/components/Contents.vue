@@ -13,11 +13,9 @@
 <style scoped>
 
     .contentTab {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      flex-direction: column;
+
+      width: 50vw;
+      margin: 0 auto;
     }
-    
+
 </style>

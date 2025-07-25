@@ -34,7 +34,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 70%;
+      width: 100%;
       padding: 1em;
     
     }
