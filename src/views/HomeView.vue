@@ -34,13 +34,13 @@ export default {
     .welcomeTab {
       border-color: rgb(75, 62, 83);
       border-radius: 20px;
-      border-width: 4px;
+      border-width: 5px;
       border-style: solid;
       display: flex;
       justify-content: center;
       width: 80vh;
       height: 10em;
-      padding: 2em;
+      padding: 1.4em;
     }
 
 </style>
