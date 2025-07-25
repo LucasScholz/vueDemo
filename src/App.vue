@@ -16,18 +16,13 @@ import Header from '@/components/Header.vue';
 
 <style>
 
-    body {
+    html, body, #app {
       font-family: "Roboto", sans-serif;
       margin: 0;
       padding: 0;
       height: 100%;
-    }
-
-    input {
-      border: 0;
-      border-radius: 1em;
-      width: 100%;
-      height: 2.5em;
+      background-color: #242427;  /* sehr dunkles Grau */
+      color: #e0e0e0;
     }
 
 </style>
