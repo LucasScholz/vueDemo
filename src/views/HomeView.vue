@@ -1,46 +1,33 @@
 <template>
-  <div class = "contentTab">
-    <div class = "welcomeTab">
-        <div class = "bigHeading">Willkommen auf meiner ersten Vue-Website.</div>
-    </div>
-  </div>
-    
+
+  <Contents>
+    <StartingBlock 
+    headline="Willkommen auf meiner ersten Vue-Website"
+    description ="Ich habe begonnen, diese Vue-Seite zu entwerfen, um meine Fähigkeiten im Umgang mit Vue zu verbessern. Vue.js ist ein modernes, fortschrittliches JavaScript-Framework zur Erstellung interaktiver Benutzeroberflächen. Es ist besonders beliebt, weil es einfach zu erlernen ist und gleichzeitig leistungsstarke Funktionen für komplexe Anwendungen bietet. Ein zentrales Konzept von Vue ist die Komponentenbasierte Architektur: Anstatt eine ganze Seite als eine Einheit zu entwickeln, zerlegt man sie in wiederverwendbare Komponenten – z. B. eine Navigationsleiste, ein Suchfeld oder einen Inhaltsteil. Diese Komponenten sind jeweils kleine, unabhängige Bausteine mit eigenem HTML, CSS und JavaScript. Vue verwendet ein reaktives Datenmodell, das bedeutet: Wenn sich Daten im Hintergrund ändern, wird die Benutzeroberfläche automatisch aktualisiert."
+    >
+      <ListEntry/>
+    </StartingBlock>
+  </Contents>
+  
 </template>
 
 <script>
-import RecipeItem from '@/components/RecipeItem.vue';
+import Contents from '@/components/Contents.vue';
+import ListEntry from '@/components/ListEntry.vue';
+import StartingBlock from '@/components/StartingBlock.vue';
 
 // @ is an alias to /src
 
 export default {
   name: 'HomeView',
   components: {
-    RecipeItem
+    Contents,
+    ListEntry,
+    StartingBlock
   }
 }
 </script>
 
 
 <style>
-
-    .contentTab {
-      display: flex;
-      justify-content: center;
-      width: 100vh;
-      height: 100vh;
-
-    }
-
-    .welcomeTab {
-      border-color: rgb(75, 62, 83);
-      border-radius: 20px;
-      border-width: 5px;
-      border-style: solid;
-      display: flex;
-      justify-content: center;
-      width: 80vh;
-      height: 10em;
-      padding: 1.4em;
-    }
-
 </style>

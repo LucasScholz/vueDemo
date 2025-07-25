@@ -1,5 +1,7 @@
 <template>
-
+    <div class="contentTab">
+        <slot/>
+    </div>
 </template>
 
 <script>
@@ -10,4 +12,11 @@
 
 <style scoped>
 
+    .contentTab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
 </style>
