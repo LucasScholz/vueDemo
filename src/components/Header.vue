@@ -4,7 +4,7 @@
       <ul class="nav-list">
         <li class="nav-item"><a href="/">Startseite</a></li>
         <li class="nav-item"><a href="/ausbildung/">Ausbildung</a></li>
-        <li class="nav-item"><a href="/berfarung/">Berufserfahrung</a></li>
+        <li class="nav-item"><a href="/berfahrung/">Berufserfahrung</a></li>
         <li class="nav-item"><a href="/kenntnisse/">Kenntnisse</a></li>
       </ul>
     </nav>

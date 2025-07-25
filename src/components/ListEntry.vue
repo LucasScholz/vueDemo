@@ -1,11 +1,11 @@
 <template>
-    <div class = "box">
+        <router-link :to="dest" class="link-box">
         <img class = "icon" :src="imgSrc" alt="Bild" />
             <div class = "textbox">
                 <div class="boxHeader"> {{ boxText }} </div>
                 <div class="boxDescription"> {{ description }}</div>
             </div>
-    </div>
+        </router-link>
 </template>
 
 <script>
@@ -23,6 +23,10 @@
                 type: String,
                 required: true
             },
+            dest: {
+                type: String,
+                required: true
+            }
         }
     }
 </script>
@@ -61,6 +65,19 @@
 
     .boxDescription {
         font-size: medium;
+    }
+
+    .link-box {
+        text-decoration: none;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: rgb(75, 62, 83);
+        border-width: 5px;
+        width: 70%;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        color: #e0e0e0;
     }
 
 </style>

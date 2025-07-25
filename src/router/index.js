@@ -18,7 +18,7 @@ const routes = [
   },
   {
     path: '/berfahrung',
-    name: 'erfahrung',
+    name: 'berfahrung',
     component: ErfahrungView
   },
   {
