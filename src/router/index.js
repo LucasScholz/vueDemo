@@ -1,9 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AusbildungView from '@/views/AusbildungView.vue'
 import ErfahrungView from '@/views/ErfahrungView.vue'
 import KenntnisseView from '@/views/KenntnisseView.vue'
-
+import { createRouter, createWebHashHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
@@ -37,8 +36,9 @@ const routes = [
   }
 ]
 
+
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 
