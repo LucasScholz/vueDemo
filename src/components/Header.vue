@@ -2,10 +2,10 @@
     <header>
         <nav class="navbar">
       <ul class="nav-list">
-        <li class="nav-item"><a href="/">Startseite</a></li>
-        <li class="nav-item"><a href="/ausbildung/">Ausbildung</a></li>
-        <li class="nav-item"><a href="/berfahrung/">Berufserfahrung</a></li>
-        <li class="nav-item"><a href="/kenntnisse/">Kenntnisse</a></li>
+        <li class="nav-item"><router-link to="/">Startseite</router-link></li>
+        <li class="nav-item"><router-link to="/ausbildung">Ausbildung</router-link></li>
+        <li class="nav-item"><router-link to="/berfahrung">Berufserfahrung</router-link></li>
+        <li class="nav-item"><router-link to="/kenntnisse">Kenntnisse</router-link></li>
       </ul>
     </nav>
     </header>
