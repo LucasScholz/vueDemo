@@ -1,3 +1,4 @@
+import BootstrapView from '@/views/BootstrapView.vue';
 import HomeView from '../views/HomeView.vue'
 import AusbildungView from '@/views/AusbildungView.vue'
 import ErfahrungView from '@/views/ErfahrungView.vue'
@@ -24,6 +25,11 @@ const routes = [
     path: '/kenntnisse',
     name: 'kenntnisse',
     component: KenntnisseView
+  },
+  {
+    path: '/bootstrap',
+    name: 'bootstrap',
+    component: BootstrapView
   },
   
   {
